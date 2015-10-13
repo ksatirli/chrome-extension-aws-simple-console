@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Options page for AWS Simple Console Chrome Extension">
+    <meta name="author" content="ConfKit">
+    <title>AWS Simple Console: Options</title>
+
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/css/bootstrap-theme.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- begin: div.container -->
+    <div class="container">
+
+      <!-- begin: div.row -->
+      <div class="row">
+        <form>
+
+          <!-- begin: div.col-md-12 -->
+          <div class="col-md-12">
+            <h4>Compute</h4>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ec2">
+                EC2
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ecs">
+                EC2 Container Service
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="eb">
+                Elastic Beanstalk
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="lam">
+                Lambda
+              </label>
+            </div>
+
+            <h4>Storage &amp; Content Delivery</h4>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="s3">
+                S3
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="cfr">
+                CloudFront
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="efs">
+                Elastic File System
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="gl">
+                Glacier
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="imex">
+                Import/Export Snowball
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="sg">
+                Storage Gateway
+              </label>
+            </div>
+
+            <h4>Database</h4>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="rds">
+                RDS
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ddb">
+                DynamoDB
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="elc">
+                ElastiCache
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="rs">
+                Redshift
+              </label>
+            </div>
+
+            <h4>Networking</h4>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="vpc">
+                VPC
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="dc">
+                Direct Connect
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="r53">
+                Route 53
+              </label>
+            </div>
+
+            <h4>Developer Tools</h4>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="cc">
+                CodeCommit
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="cd">
+                CodeDeploy
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="cp">
+                CodePipeline
+              </label>
+            </div>
+
+            <h4>Management Tools</h4>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="cw">
+                CloudWatch
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="cfo">
+                CloudFormation
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ctr">
+                CloudTrail
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="cfg">
+                Config
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ops">
+                OpsWorks
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="sc">
+                Service Catalog
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ta">
+                Trusted Advisor
+              </label>
+            </div>
+
+            <h4>Security &amp; Identity</h4>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="iam">
+                Identity &amp; Access Management
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ds">
+                Directory Service
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ins">
+                Inspector
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="waf">
+                WAF
+              </label>
+            </div>
+
+            <h4>Analytics</h4>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="emr">
+                EMR
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="dp">
+                Data Pipeline
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="es">
+                Elasticsearch Service
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ki">
+                Kinesis
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ml">
+                Machine Learning
+              </label>
+            </div>
+
+            <h4>Internet of Things</h4>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="iot">
+                AWS IoT
+              </label>
+            </div>
+
+            <h4>Mobile Services</h4>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="mh">
+                Mobile Hub
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="c">
+                Cognito
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="df">
+                Device Farm
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="a">
+                Mobile Analytics
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="sns">
+                SNS
+              </label>
+            </div>
+
+            <h4>Application Services</h4>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ag">
+                API Gateway
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="aps">
+                AppStream
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="cs">
+                CloudSearch
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ets">
+                Elastic Transcoder
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="ses">
+                SES
+              </label>
+            </div>
+
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="sqs">
+                SQS
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="swf">
+                SWF
+              </label>
+            </div>
+
+            <h4>Enterprise Applications</h4>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="wks">
+                WorkSpaces
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="z">
+                WorkDocs
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+              <input class="service" type="checkbox" checked value="wkm">
+                WorkMail
+              </label>
+            </div>
+
+          </div>
+          <!-- end: div.col-md-12 -->
+
+        </form>
+
+      </div>
+      <!-- end: div.row -->
+
+    </div>
+    <!-- end: div.container -->
+
+  </body>
+
+  <script src="src/js/zepto.min.js"></script>
+  <script src="src/js/utils.js"></script>
+  <script src="src/js/extension.js"></script>
+  <script src="src/js/options.js"></script>
+</html>
