@@ -34,5 +34,5 @@ function getItems(className, checkboxStatus) {
  * @return {Object} Returns an object  containing config options
  */
 function getOptions(callback) {
-  chrome.storage.sync.get('confKitAwsSimpleConsole', callback);
+  chrome.storage.sync.get('cultivatedOpsAwsSimpleConsole', callback);
 }

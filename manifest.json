@@ -1,10 +1,10 @@
 {
   "name": "AWS Simple Console",
   "short_name": "AWS Simple Console",
-  "version": "0.8.3",
+  "version": "1.0.1",
   "manifest_version": 2,
-  "description": "Amazon offers a breathtaking 50+ services through their AWS Console. This extension will allow you to hide the ones you do not use.",
-  "homepage_url": "https://confkit.com/",
+  "description": "Remove the clutter from your AWS Management Console by only showing the service you actually use.",
+  "homepage_url": "https://cultivatedops.io/",
   "icons": {
     "16": "src/images/icon-16.png",
     "32": "src/images/icon-32.png",

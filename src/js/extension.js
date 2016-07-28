@@ -8,7 +8,7 @@ function hideItems() {
   getOptions(function(data) {
 
     // hide items from AWS console
-    data.confKitAwsSimpleConsole.hidden.forEach( function(itemId) {
+    data.cultivatedOpsAwsSimpleConsole.hidden.forEach( function(itemId) {
       $('a.service[data-service-id="' + itemId + '"]').hide();
     });
 

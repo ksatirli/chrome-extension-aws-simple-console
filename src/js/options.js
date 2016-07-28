@@ -13,14 +13,14 @@ function saveOptions() {
     visible: visibleItems
   };
 
-  chrome.storage.sync.set({ confKitAwsSimpleConsole: options }, function() {
+  chrome.storage.sync.set({ cultivatedOpsAwsSimpleConsole: options }, function() {
     return true;
   });
 }
 
 function applyOptions() {
   getOptions(function(data) {
-    data.confKitAwsSimpleConsole.hidden.forEach( function(itemId) {
+    data.cultivatedOpsAwsSimpleConsole.hidden.forEach( function(itemId) {
       // hide item from options listing
       $('input.' + config.classNames.service + '[value=' + itemId + ']').prop('checked', false);
     });
